@@ -1,0 +1,21 @@
+{
+    "services": {
+      "cloudantNoSQLDB": [
+        {
+          "credentials": {
+            "apikey": "DPnDNWbdOB6KT4u_u3B_YLYK1twRSsS1QAnXIWTPEZs3",
+            "host": "8e6d8b32-66b5-4587-986c-2f808be4e7fc-bluemix.cloudantnosqldb.appdomain.cloud",
+            "iam_apikey_description": "Auto-generated for key crn:v1:bluemix:public:cloudantnosqldb:au-syd:a/4c9a0b9c9be64d6e8a8c77c3edfa08c9:d6235bb3-925e-4590-a4c0-4d97d35e6ff3:resource-key:72d87321-87cd-4d1b-92fd-51d3ad71195c",
+            "iam_apikey_name": "GroupSix",
+            "iam_role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Manager",
+            "iam_serviceid_crn": "crn:v1:bluemix:public:iam-identity::a/4c9a0b9c9be64d6e8a8c77c3edfa08c9::serviceid:ServiceId-47d255be-3943-4d95-967f-86dc7c7bb05d",
+            "password": "ef5de0ba3a371ac0ed10b5c934c4d253",
+            "port": 443,
+            "url": "https://apikey-v2-qxyjkmzp5jm0i1bavxulm7v90fs8tk1y3pffaezsn0w:ef5de0ba3a371ac0ed10b5c934c4d253@8e6d8b32-66b5-4587-986c-2f808be4e7fc-bluemix.cloudantnosqldb.appdomain.cloud",
+            "username": "apikey-v2-qxyjkmzp5jm0i1bavxulm7v90fs8tk1y3pffaezsn0w"
+          },
+          "label": "cloudantNoSQLDB"
+        }
+      ]
+    }
+}    
