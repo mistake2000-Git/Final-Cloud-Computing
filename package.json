@@ -20,6 +20,7 @@
   "homepage": "https://github.com/mistake2000-Git/Final-Cloud-Computing#readme",
   "dependencies": {
     "@cloudant/cloudant": "^4.5.1",
+    "ajax": "0.0.4",
     "body-parser": "1.17.x",
     "cfenv": "^1.2.4",
     "dotenv": "^8.6.0",

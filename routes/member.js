@@ -7,14 +7,14 @@ router.post('/createMember',async(req,res)=>{
     const {_id,name,position} = req.body
     try
     {   
-        console.log()
-        const Member = await mydb.insert({_id,name,position})
-        res.json(Member)
+        console.log(req.body)
+        await mydb.insert({_id,name,position})
+        res.json({success:true,message:"Create member successfully"})
     }
     catch(err)
     {
         console.log(err.message)
-        res.status(400).json({success:false,message:"Duplicate document or document id is empty!"})
+        res.json({success:false,message:"Duplicate member ID!!"})
     }
 })
 
@@ -32,12 +32,13 @@ router.get('/getall',async(req,res)=>{
     catch(err)
     {
         console.log(err.message)
-        res.status(400).json({success:false,message:"Interal Error!"})
+        res.json({success:false,message:"Interal Error!"})
     }
 })
 //Delete Member
 router.delete('/delete/:id',async(req,res)=>{
     const id = req.params.id
+    console.log(id)
     try
     {
         const member = await mydb.get(id)
@@ -48,7 +49,21 @@ router.delete('/delete/:id',async(req,res)=>{
     catch(err)
     {
         console.log(err.message)
-        res.status(400).json({success:false,message:"Can not find the member to delete"})
+        res.json({success:false,message:"Can not find the member to delete"})
+    }
+})
+
+router.put('/update',async(req,res)=>{
+    const {_id,name,position}= req.body
+    try{
+        const member = await mydb.get(_id)
+        await mydb.insert({_id:member._id,_rev:member._rev,name,position})
+        res.json({success:true,message:"Update successfully!"})
+    }
+    catch(err)
+    {
+        console.log(err.message)
+        res.json({success:false,message:err.message})
     }
 })
 module.exports= router

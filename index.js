@@ -77,9 +77,14 @@ var port = process.env.PORT || 3000
 app.listen(port, ()=> {
   console.log("App has started at http://localhost:" + port);
 });
+
+app.use('/',express.static('./'))
+app.use('/',express.static('./views/'))
+
 app.get('/',(req,res)=>{
-  res.send("Hello World!")
+  res.sendFile(__dirname+'/views/home.html');
 })
+
 
 module.exports = mydb
 const memRouter = require('./routes/member')
