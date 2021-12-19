@@ -24,7 +24,6 @@ const appEnvOpts = vcapLocal ? { vcap: vcapLocal} : {}
 const appEnv = cfenv.getAppEnv(appEnvOpts);
 
 if (process.env.CLOUDANT_URL){
-    // Load the Cloudant library.
     var Cloudant = require('@cloudant/cloudant');
   
     if (process.env.CLOUDANT_IAM_API_KEY)
