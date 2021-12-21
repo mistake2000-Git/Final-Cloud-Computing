@@ -32,7 +32,7 @@ router.get('/getall',async(req,res)=>{
     catch(err)
     {
         console.log(err.message)
-        res.json({success:false,message:"Interal Error!"})
+        res.json({success:false,message:"Intenal Error!"})
     }
 })
 //Delete Member

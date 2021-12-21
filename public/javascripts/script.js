@@ -10,7 +10,10 @@ $(()=>{
             success: (res)=>{
                 var bodyTable = $('tbody');
                 bodyTable.html('');
-                console.log(res)
+                if(res.success==false)
+                {
+                    $('#alert').html(`Notification: ${res.message}`)
+                }
                 res.forEach(element => {
                     bodyTable.append('\
                     <tr>\
