@@ -3,16 +3,16 @@
       "cloudantNoSQLDB": [
         {
           "credentials": {
-            "apikey": "DPnDNWbdOB6KT4u_u3B_YLYK1twRSsS1QAnXIWTPEZs3",
-            "host": "8e6d8b32-66b5-4587-986c-2f808be4e7fc-bluemix.cloudantnosqldb.appdomain.cloud",
-            "iam_apikey_description": "Auto-generated for key crn:v1:bluemix:public:cloudantnosqldb:au-syd:a/4c9a0b9c9be64d6e8a8c77c3edfa08c9:d6235bb3-925e-4590-a4c0-4d97d35e6ff3:resource-key:72d87321-87cd-4d1b-92fd-51d3ad71195c",
-            "iam_apikey_name": "GroupSix",
+            "apikey": "nOpXxGuijoB6KqLmkJNsKf6C0Rbr9KpPa83TiWk0dq3J",
+            "host": "a57099cd-898e-4796-9bd3-d2461276a81c-bluemix.cloudantnosqldb.appdomain.cloud",
+            "iam_apikey_description": "Auto-generated for key crn:v1:bluemix:public:cloudantnosqldb:us-south:a/4c9a0b9c9be64d6e8a8c77c3edfa08c9:28de04c4-33a5-496e-bbee-8087d21e546c:resource-key:d7402920-562e-4b1a-a08b-06ff22b28fa0",
+            "iam_apikey_name": "Service credentials-1",
             "iam_role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Manager",
-            "iam_serviceid_crn": "crn:v1:bluemix:public:iam-identity::a/4c9a0b9c9be64d6e8a8c77c3edfa08c9::serviceid:ServiceId-47d255be-3943-4d95-967f-86dc7c7bb05d",
-            "password": "ef5de0ba3a371ac0ed10b5c934c4d253",
+            "iam_serviceid_crn": "crn:v1:bluemix:public:iam-identity::a/4c9a0b9c9be64d6e8a8c77c3edfa08c9::serviceid:ServiceId-b963102f-69ba-4791-b0e5-4ccc3e795389",
+            "password": "75b94e8c710f5392fc7cc66174e029f3",
             "port": 443,
-            "url": "https://apikey-v2-qxyjkmzp5jm0i1bavxulm7v90fs8tk1y3pffaezsn0w:ef5de0ba3a371ac0ed10b5c934c4d253@8e6d8b32-66b5-4587-986c-2f808be4e7fc-bluemix.cloudantnosqldb.appdomain.cloud",
-            "username": "apikey-v2-qxyjkmzp5jm0i1bavxulm7v90fs8tk1y3pffaezsn0w"
+            "url": "https://apikey-v2-2uc62jxmpy34u39dbuutfc8io2udofc7ionaczoj3x6g:75b94e8c710f5392fc7cc66174e029f3@a57099cd-898e-4796-9bd3-d2461276a81c-bluemix.cloudantnosqldb.appdomain.cloud",
+            "username": "apikey-v2-2uc62jxmpy34u39dbuutfc8io2udofc7ionaczoj3x6g"
           },
           "label": "cloudantNoSQLDB"
         }

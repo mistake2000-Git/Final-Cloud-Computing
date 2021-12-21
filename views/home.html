@@ -5,32 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="public/javascripts/script.js"></script>
     <link rel="stylesheet" href="public/stylesheets/mystyle.css">
 </head>
 <body>
-    <div class="header">
-      <div class="intro">
-        <img id="logo" src="/public/images/Logo-DH-Cong-Nghe-Thong-Tin-UIT.png" alt="Logo UIT" width="100" height="70">
+    <header>
+        <img id="logo" src="/public/images/Logo-DH-Cong-Nghe-Thong-Tin-UIT.png" alt="Logo UIT" >
         <h1>Cloud Computing Project</h1>
       </div>
-       
-    </div>
+    </header>
+     
     <section>
-        <h2>Group 6</h2>
+        <h2>Group 6</h2><br>
+        <h2 id="subject">IBM Cloud</h2>
         <div class="form">
             <form id="insert-form">
                 <label for="id">Student ID</label>
-                <input type="text" id="id" value="id"><br><br>
+                <input type="text" id="id" required><br><br>
                 <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name"><br><br>
+                <input type="text" id="name" name="name" required><br><br>
                 <label for="position">Position:</label>
-                <input type="text" id="position"name="position"><br><br>
-                <input type="submit" value="Save">
+                <select id="position" name="position" required>
+                  <option value="Leader">Member</option>
+                  <option value="Leader">Leader</option>
+                </select>            
+                <input type="submit" value="Add new member">
               </form>
         </div>
-        <div id="alert"></div>
+        <div id="alert">Notification:</div>
         <table class="tableGroup">
           <thead>
             <tr>

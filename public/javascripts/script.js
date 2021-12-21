@@ -30,14 +30,14 @@ $(()=>{
             event.preventDefault();
             let _id = $("#id").val();
             let name = $("#name").val();
-            let position = $("#position").val();
+            let position = $('#position :selected').text();
             $.ajax({
                 url:'/member/createMember',
                 method:"POST",
                 contentType:"application/json",
                 data: JSON.stringify({_id:_id,name:name,position:position}),
                 success: (res)=>{
-                    $('#alert').html(`Message: ${res.message}`)
+                    $('#alert').html(`Notification: ${res.message}`)
                     $(load())
                 }
             })
@@ -53,7 +53,7 @@ $(()=>{
             method: "DELETE",
             contentType: "application/json",
             success: (res)=>{
-                $('#alert').html(`Message: ${res.message}`)
+                $('#alert').html(`Notification: ${res.message}`)
                 $(load())
             }
         })
@@ -70,7 +70,7 @@ $(()=>{
             contentType: "application/json",
             data: JSON.stringify({_id:id.trim(),name:newName,position:newPosition}),
             success: (res)=>{
-                $('#alert').html(`Message: ${res.message}`)
+                $('#alert').html(`Notification: ${res.message}`)
                 $(load())
             }
         })
